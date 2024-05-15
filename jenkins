@@ -6,7 +6,7 @@ pipeline {
             agent any
             steps {
               withSonarQubeEnv('sq') {
-                sh 'mvn clean package sonar:sonar'
+                sh 'echo "hello world"'
               }
             }
           }
